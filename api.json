@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/cu-sith",
     "maintainers": [
       {
@@ -18,70 +18,123 @@
   },
   "phenomenon": {
     "id": "cu-sith",
-    "name": "Cú Sìth (The Fairy Hound)",
-    "aliases": [],
-    "category": "ENTITY_SPIRIT",
-    "subcategory": "evidence",
+    "name": "Cù Sìth",
+    "aliases": [
+      { "name": "Cù-sìth", "language": "Scottish Gaelic", "region": "Scottish Highlands", "meaning": "fairy hound" },
+      { "name": "Coin-shìth", "language": "Scottish Gaelic", "meaning": "fairy hounds (plural)" },
+      { "name": "Cú Sídhe", "language": "Irish", "region": "Ireland", "meaning": "Irish cognate fairy hound" },
+      { "name": "Fairy Dog", "region": "English, Scottish Highlands" },
+      { "name": "Hound of the Sídhe", "region": "Anglophone folklore writing" }
+    ],
+    "category": "FAE_FOLKLORE",
+    "subcategory": "Fairy hound / death omen",
     "tags": [
+      "scottish-folklore",
+      "fairy",
+      "hound",
       "death-omen",
-      "fairy-realm",
-      "threshold-guardian"
+      "celtic",
+      "psychopomp",
+      "highland"
     ],
     "status": "documented",
     "description": {
-      "summary": "The Cú Sìth (pronounced \\\"coo-shee\\\"), also known as the Fairy Dog or Hound of the Sídhe, is a supernatural canine creature from Scottish Highland folklore, particularly associated with the Gaelic-speaking regions of Scotland.",
-      "full": "The Cú Sìth (pronounced \\\"coo-shee\\\"), also known as the Fairy Dog or Hound of the Sídhe, is a supernatural canine creature from Scottish Highland folklore, particularly associated with the Gaelic-speaking regions of Scotland. This massive, dark green hound with a shaggy coat is said to be as large as a small calf or yearling bull, and is one of the most feared omens in Highland tradition. Unlike mortal dogs that bark frequently, the Cú Sìth remains eerily silent as it moves through the misty glens and moorlands until it releases three terrifying barks that echo across the hills. According to tradition, those who hear the third bark before finding shelter are doomed to die of fright or will soon meet their death. The creature is intimately connected to the fairy mounds (sídhe) and the Otherworld, serving as both guardian and psychopomp, bridging the realm of mortals and the supernatural realm of Scottish fairy folk."
+      "summary": "A large, dark green, shaggy supernatural hound of Scottish Highland folklore, the size of a young bull, said to hunt silently and utter only three baying barks; hearing its third bark before reaching shelter is held to be fatal.",
+      "full": "The Cù Sìth (Scottish Gaelic, 'fairy hound'; pronounced approximately 'koo shee') is a fairy hound of Scottish Gaelic Highland tradition, closely paralleled by the Irish Cú Sídhe and the Welsh Cŵn Annwn. Folklorists describe it as roughly the size of a young bull or large calf, with a long shaggy coat of dark green colouring and a coiled or plaited tail. It dwells in the clefts of rocks and moorlands and travels silently, leaving prints the size of a man's hand. According to tradition recorded by J. G. Campbell in Superstitions of the Highlands and Islands of Scotland (1900), the cù-sìth normally hunts in silence but on occasion gives three loud, terrible bays, audible at great distance; a person who hears all three barks without reaching shelter is overcome with terror and dies. Some accounts associate the hound with carrying off lactating women to the fairy mounds (sídhe) to nurse fairy children. The Cù Sìth is part of the broader Aos Sí complex of beings in Celtic mythology and one of the most recognisable figures in Highland fairy lore."
     },
     "etymology": {
-      "origin": "Scottish Gaelic Highland",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Scottish Gaelic. Cù ('hound, dog') + sìth (genitive of sìthe, 'of the fairy mound'). The word sìth/sìdh originally denotes the fairy mounds and, by extension, the fairy people themselves.",
+      "meaning": "'Fairy hound', 'hound of the fairy mound', 'sídhe-hound'.",
+      "first_use": "Recorded in Scottish Gaelic folklore collections from the 19th century; printed forms appear in J. F. Campbell's Popular Tales of the West Highlands (1860–1862) and J. G. Campbell's Superstitions of the Highlands and Islands of Scotland (1900)."
     }
   },
   "classification": {
     "taxonomy": {
-      "category": "ENTITY_SPIRIT",
-      "type": "evidence",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "FAE_FOLKLORE",
+      "type": "Fairy hound",
+      "subtype": "Death-omen / psychopomp",
+      "variant": "Scottish Highland"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "black-shuck", "name": "Black Shuck", "relationship": "similar", "description": "East Anglian spectral black hound and death-omen" },
+      { "id": "black-dog", "name": "Black Dog", "relationship": "similar", "description": "British folkloric class of spectral hounds" },
+      { "id": "cu-sith", "name": "Cú Sídhe (Irish)", "relationship": "counterpart", "description": "Irish cognate fairy hound" },
+      { "id": "wild-hunt", "name": "Wild Hunt", "relationship": "related", "description": "Northern European spectral hunting party often led by hounds" },
+      { "id": "aos-si", "name": "Aos Sí", "relationship": "superset", "description": "Wider Celtic fairy population to which the cù-sìth belongs" },
+      { "id": "bulgae", "name": "Bulgae", "relationship": "similar", "description": "Korean fairy/fire hounds" }
+    ]
   },
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 1.0, "max": 1.4, "unit": "meters", "confidence": "low" },
+      "coloration": ["dark green", "deep moss-green", "occasionally white with red ears in related Irish/Welsh traditions"],
+      "features": [
+        { "feature": "Shaggy coat", "description": "Long, coarse, shaggy fur of dark green colour", "frequency": "always" },
+        { "feature": "Bull-calf size", "description": "Approximately the size of a young bull or two-year-old stirk", "frequency": "always" },
+        { "feature": "Coiled or plaited tail", "description": "Tail described as either coiled flat upon the back or twisted into a long plait", "frequency": "common" },
+        { "feature": "Hand-sized paw prints", "description": "Tracks reported to be as large as the spread of a man's hand", "frequency": "common" }
+      ],
+      "morphology": "Large quadruped canid morphology, distinct from natural Scottish hunting dogs in size and coloration."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Silent hunting", "description": "Moves through the moorlands without sound; described in Campbell (1900) as taking 'great bounds' in straight lines", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Three terrible bays", "description": "Releases three loud bays, audible at great distance, between which a traveller must reach shelter or die of fright", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Abduction of nursing women", "description": "Some traditions recount the cù-sìth being sent to fetch lactating mothers to nurse fairy children", "frequency": "rare", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "neutral",
+      "social_structure": "solitary",
+      "habitat_preference": ["clefts of rocks", "moorland", "Highland glens", "fairy mounds (sìdhean)"],
+      "patterns": [
+        "Hunts silently across the moors",
+        "Bays only three times in any encounter",
+        "Acts as messenger or servant of the fairy folk"
+      ]
     }
   },
   "distribution": {
     "range": {
-      "description": "Scottish Gaelic Highland",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Recorded throughout the Scottish Gàidhealtachd, especially the Highlands and Western Isles. Cognate traditions occur across Gaelic Ireland and Wales.",
+      "continents": ["Europe"],
+      "countries": ["United Kingdom"],
+      "regions": ["Scottish Highlands", "Hebrides", "Argyll", "Isle of Skye"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Scottish Highlands (Gàidhealtachd)",
+        "location": {
+          "description": "Gaelic-speaking northern and western Scotland",
+          "country": "United Kingdom",
+          "region": "Scotland"
+        },
+        "peak_period": "18th–19th centuries (folklore-collection era)",
+        "notes": "Core area for the documented cù-sìth tradition."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1860",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "J. F. Campbell, Popular Tales of the West Highlands (1860–1862)"
+      },
+      "peak_activity_periods": [
+        { "period": "18th–19th centuries", "description": "Living oral tradition collected by Campbell of Islay and Campbell of Tiree" }
+      ]
     }
   },
   "history": {
     "origins": {
-      "cultural_roots": "Scottish Gaelic Highland",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Gaelic Highland folk-belief in the Aos Sí (the fairy people) and their hounds; part of a broader Celtic spectral-hound tradition shared with Ireland and Wales.",
+      "earliest_accounts": "Earliest extensive printed accounts appear in J. F. Campbell's Popular Tales of the West Highlands (1860–1862) and J. G. Campbell's Superstitions of the Highlands and Islands of Scotland (1900), drawing on oral testimony from Highland and Hebridean informants.",
+      "folklore_connections": "Closely related to the Irish Cú Sídhe and the Welsh Cŵn Annwn; part of a wider European tradition of spectral hounds that includes the English Black Shuck and the German Höllenhunde."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1860", "event": "J. F. Campbell publishes Popular Tales of the West Highlands, including fairy-hound material", "significance": "First major print collection of Scottish Gaelic oral tradition", "source": "Campbell, J. F. (1860–1862)" },
+      { "date": "1900", "event": "J. G. Campbell's Superstitions of the Highlands and Islands of Scotland gives the canonical short description of the cù-sìth", "significance": "Standard folkloric source", "source": "Campbell, J. G. (1900)" },
+      { "date": "2004", "event": "James MacKillop's Dictionary of Celtic Mythology summarises the tradition for modern reference readers", "significance": "Modern scholarly synthesis", "source": "MacKillop (2004)" }
+    ],
+    "modern_era": "The Cù Sìth survives chiefly as a folkloric figure in published Scottish Gaelic tradition, modern fantasy literature, role-playing games, and Scottish tourism marketing rather than as a contemporary belief in active sightings."
   },
   "sightings": {
     "statistics": {
@@ -98,30 +151,88 @@
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "cu-sith-evidence-campbell-1900",
+        "type": "folklore record",
+        "name": "J. G. Campbell, Superstitions of the Highlands and Islands of Scotland",
+        "date": "1900",
+        "description": "Folkloric description of the cù-sìth as a green shaggy hound the size of a stirk, with three terrible bays.",
+        "status": "verified",
+        "analysis": "Primary source for nearly all subsequent English-language accounts of the cù-sìth.",
+        "source": "Campbell, J. G. (1900)"
+      }
+    ]
   },
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Psychopomp / death omen",
+        "description": "The cù-sìth functions as an omen and agent of death, its third bark marking the threshold beyond which the hearer cannot escape.",
+        "proponents": ["J. G. Campbell", "James MacKillop"],
+        "evidence_cited": ["Highland oral tradition", "Parallel Celtic spectral-hound traditions"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Folkloric explanation",
+        "description": "The cù-sìth is a folkloric figure expressing Highland anxieties about death, the wilderness, and the boundary with the Otherworld; not a literal animal.",
+        "proponents": ["Folklorists generally"],
+        "evidence_cited": ["Absence of physical evidence", "Embedding in a larger fairy-belief complex"]
+      }
+    ]
   },
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Scottish Gaelic Highland fairy lore",
+        "Aos Sí / sìth tradition"
+      ],
+      "stories": [
+        "The three bays of the cù-sìth (J. G. Campbell, 1900)",
+        "Tales of nursing mothers stolen by the fairy hound"
+      ],
+      "beliefs": "Highland tradition treats the cù-sìth as a real and dangerous being, an emissary of the fairy folk; protective measures include reaching home, doors, or sacred ground before the third bark."
+    },
+    "indigenous": {
+      "cultures": ["Scottish Gaels", "Irish Gaels (related Cú Sídhe tradition)"],
+      "significance": "Embedded in Gaelic Highland identity and the wider Celtic Otherworld complex; appears alongside other sìthichean (fairy beings) in the moral and cosmological landscape of Highland tradition.",
+      "sensitivity_note": "The cù-sìth belongs to a living Gaelic cultural tradition; treat it as folklore rather than as a generic fantasy monster."
     },
     "popular_culture": {
-      "literature": [],
+      "literature": [
+        "Popular Tales of the West Highlands — J. F. Campbell (1860–1862)",
+        "Superstitions of the Highlands and Islands of Scotland — J. G. Campbell (1900)",
+        "Dictionary of Celtic Mythology — James MacKillop (2004)"
+      ],
       "film_tv": [],
-      "games": [],
-      "other": []
+      "games": [
+        "Final Fantasy series — recurring 'Cu Sith' enemy",
+        "Various tabletop RPG bestiaries (e.g. Pathfinder, Dungeons & Dragons)"
+      ],
+      "other": [
+        "Featured in contemporary Scottish tourism material on Highland folklore"
+      ]
     }
   },
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "John Francis Campbell (Iain Òg Ìle)", "affiliation": "Independent folklorist", "contribution": "Pioneer collector of West Highland oral tradition", "period": "1860s" },
+      { "name": "John Gregorson Campbell", "affiliation": "Minister of Tiree, folklorist", "contribution": "Posthumous publication of the standard description of the cù-sìth", "period": "Late 19th century, published 1900–1902" },
+      { "name": "James MacKillop", "affiliation": "Le Moyne College", "contribution": "Standard reference Dictionary of Celtic Mythology", "period": "1990s–2000s" }
+    ],
+    "organizations": [
+      { "name": "School of Scottish Studies, University of Edinburgh", "url": "https://www.ed.ac.uk/literatures-languages-cultures/celtic-scottish-studies", "focus": "Archive of Scottish Gaelic oral tradition" },
+      { "name": "Tobar an Dualchais / Kist o Riches", "url": "https://www.tobarandualchais.co.uk", "focus": "Online archive of Scottish Gaelic and Scots oral recordings" }
+    ],
+    "ongoing_studies": "Ongoing folkloric and literary scholarship at universities with Celtic Studies programmes; no field-cryptozoological research."
   },
-  "sources": []
+  "sources": [
+    { "id": "campbell-jg-1900", "type": "book", "title": "Superstitions of the Highlands and Islands of Scotland", "authors": ["John Gregorson Campbell"], "publication": "James MacLehose & Sons, Glasgow", "date": "1900" },
+    { "id": "campbell-jf-1860", "type": "book", "title": "Popular Tales of the West Highlands", "authors": ["John Francis Campbell"], "publication": "Edmonston and Douglas, Edinburgh", "date": "1860-1862" },
+    { "id": "mackillop-2004", "type": "book", "title": "A Dictionary of Celtic Mythology", "authors": ["James MacKillop"], "publication": "Oxford University Press", "date": "2004", "isbn": "978-0198609674" },
+    { "id": "wikipedia-cu-sith", "type": "website", "title": "Cù-sìth", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/C%C3%B9-s%C3%ACth", "accessed": "2026-05-07" }
+  ]
 }
